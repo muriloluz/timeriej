@@ -1,0 +1,34 @@
+<div class="container-fluid fundo align-middle" style="height: 100%" >
+
+  <div class="row justify-content-md-end" style="margin-top:10px">
+    
+  <div class="col titulo"> INSTITUTO ENSINAR JIU-JITSU </div>
+
+    <button type="button" class="btn btn-dark rounded-circle btn-conf" ><i class="bi bi-gear btn-acao-icones"></i></button>
+  </div>
+
+<div class="row justify-content-md-center align-middle" >
+
+  
+  <img src="../assets/IEJ.png" class="col logo" style="margin-top: 5%">
+
+
+<div class="col">
+  <cd-timer class="timerContainer" #timer [autoStart]="true" [countdown]="true" [startTime]="120" format="ms"  (onComplete)="onComplete()">
+    2:00
+  </cd-timer>
+</div>
+
+<div class="row row col-md-9 justify-content-center">
+  <button type="button" class="btn btn-success rounded-circle btn-acao" ><i class="bi bi-play-fill btn-acao-icones"></i></button>
+  <button type="button" class="btn btn-warning rounded-circle btn-acao" ><i class="bi bi-pause-fill btn-acao-icones"></i></button>
+  <button type="button" class="btn btn-danger rounded-circle btn-acao" ><i class="bi bi-stop-fill  btn-acao-icones"></i></button>
+</div>
+
+</div>
+
+
+
+</div>
+
+<router-outlet></router-outlet>
